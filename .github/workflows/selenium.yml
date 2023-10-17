@@ -21,7 +21,7 @@ jobs:
       - name: Run Selenium Tests
         run: |
           javac Main.java
-          java Main
+          java Main.class
           echo "Current Working Directory: $(pwd)"
         working-directory: /home/runner/work/SeleniumPOC/SeleniumPOC/src/main/java/org/example/
         env:
