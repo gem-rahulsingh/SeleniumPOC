@@ -24,3 +24,7 @@ jobs:
           java Main
           echo "Current Working Directory: $(pwd)"
         working-directory: /home/runner/work/SeleniumPOC/SeleniumPOC/src/main/java/org/example/
+        env:
+          JAVA_HOME_11.0.20_x64: /opt/hostedtoolcache/jdk/11.0.20/x64
+          JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.20/x64
+          JAVA_HOME_11_0_20_X64: /opt/hostedtoolcache/jdk/11.0.20/x64
