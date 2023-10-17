@@ -27,6 +27,6 @@ jobs:
           sudo mv chromedriver /usr/local/bin
 
           # Compile and run Selenium Java script
-          javac SeleniumTest.java
-          java SeleniumTest
+          javac Main.java
+          java Main
         working-directory: ./path/to/your/java/project
