@@ -14,12 +14,15 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Java and Maven
-      uses: actions/setup-java@v2
+    - name: Set up Java
+      uses: actions/setup-java@v1
       with:
         java-version: 11
-        distribution: 'maven' # Specify Maven as the distribution
-        maven-version: '3.8.4' # Specify the Maven version you need
+
+    - name: Set up Maven
+      run: |
+        sudo apt-get install maven -y
+      shell: bash
 
     - name: Build and run Selenium tests
       run: |
