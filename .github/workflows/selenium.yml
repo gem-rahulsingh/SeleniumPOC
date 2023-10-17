@@ -26,6 +26,6 @@ jobs:
 
     - name: Build and run Selenium tests
       run: |
-        mvn clean install
-        java -cp target/*:target/classes com.example.Main # Change the package and class name accordingly
+        javac Main.java
+        java Main
       working-directory: ${{ github.workspace }}
