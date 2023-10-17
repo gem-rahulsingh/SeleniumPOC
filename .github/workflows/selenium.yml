@@ -21,6 +21,6 @@ jobs:
       - name: Run Selenium Tests
         run: |
           # Compile and run Selenium Java script
-          javac Main.java
-          java Main
+          javac org/example/Main.java
+          java org.example.Main
         working-directory: /home/runner/work/SeleniumPOC/SeleniumPOC/src/main/java/org/example/
