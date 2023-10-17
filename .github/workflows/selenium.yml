@@ -18,13 +18,15 @@ jobs:
         with:
           java-version: 11 # or the version you need
 
-      - name: Run Selenium Tests
-        run: |
-          javac Main.java
-          java Main.class
-          echo "Current Working Directory: $(pwd)"
-        working-directory: /home/runner/work/SeleniumPOC/SeleniumPOC/src/main/java/org/example/
-        env:
-          JAVA_HOME_11.0.20_x64: /opt/hostedtoolcache/jdk/11.0.20/x64
-          JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.20/x64
-          JAVA_HOME_11_0_20_X64: /opt/hostedtoolcache/jdk/11.0.20/x64
+      - name: Compile and Run Selenium Tests
+          run:
+              # Compile and run Selenium Java script
+              javac org/example/Main.java
+              java org.example.Main
+        working-directory: /home/runner/work/SeleniumPOC/SeleniumPOC/src/main/java/
+        shell: /usr/bin/bash -e {0}
+          env:
+            JAVA_HOME_11.0.20_x64: /opt/hostedtoolcache/jdk/11.0.20/x64
+            JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.20/x64
+            JAVA_HOME_11_0_20_X64: /opt/hostedtoolcache/jdk/11.0.20/x64
+
