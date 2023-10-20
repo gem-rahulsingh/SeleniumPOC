@@ -25,17 +25,16 @@
             <artifactId>selenium-java</artifactId>
             <version>4.14.1</version>
         </dependency>
-
-         <dependencies>
-    <!-- Other dependencies -->
-
-    <!-- JUnit dependency for testing -->
-    <dependency>
+         <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>4.13.1</version> <!-- Use the latest version -->
         <scope>test</scope>
     </dependency>
+             
+   <dependencies>
+ 
+    
 </dependencies>
     
              
