@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-public class MyTest {
+public class Main{
 
     @Test
     public void testSomething() {
