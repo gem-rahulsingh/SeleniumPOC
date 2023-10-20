@@ -1,24 +1,26 @@
 package org.example;
 
-// import org.openqa.selenium.WebDriver;
-// import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-// import io.github.bonigarcia.wdm.WebDriverManager;
 public class Main {
+
     public static void main(String[] args) {
-        // // Setup WebDriver using WebDriverManager
-        // WebDriverManager.chromedriver().setup();
+        // Setup Chrome WebDriver using WebDriverManager
+        WebDriverManager.chromedriver().setup();
 
-        // // Initialize ChromeDriver
-        // WebDriver driver = new ChromeDriver();
+        // Instantiate ChromeDriver
+        WebDriver driver = new ChromeDriver();
 
-        // // Navigate to a website
-        // driver.get("https://example.com");
+        // Navigate to a website
+        driver.get("https://www.example.com");
 
-        // // Perform Selenium actions here...
+        System.out.println("Hello Tesssssssssssssssssssssssssssssssssst");
+        // Perform operations on the website
+        // ...
 
-        // // Close the browser
-        // driver.quit();
-        System.out.println("Hello World");
+        // Close the browser
+        driver.quit();
     }
 }
